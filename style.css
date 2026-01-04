@@ -1,4 +1,3 @@
-/* ===== RESET & BASE ===== */
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +14,7 @@ body {
   color: #ffffff;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 header {
   position: fixed;
   top: 0;
@@ -35,7 +34,6 @@ nav {
 .logo {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #ffffff;
 }
 
 nav ul {
@@ -47,15 +45,14 @@ nav ul {
 nav a {
   color: #cfd8dc;
   text-decoration: none;
-  font-size: 1.05rem;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
 nav a:hover {
   color: #00f2ff;
 }
 
-/* ===== SECTIONS ===== */
+/* SECTIONS */
 section {
   padding: 120px 8%;
 }
@@ -70,17 +67,21 @@ h2 span {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 10px;
 }
 
 p {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   line-height: 1.9;
   color: #d0dce2;
 }
 
-/* ===== HOME ===== */
+b {
+  color: #00f2ff;
+}
+
+/* HOME */
 .home {
   min-height: 100vh;
   display: flex;
@@ -91,36 +92,28 @@ p {
 
 .home-text h1 {
   font-size: 3.8rem;
-  margin-bottom: 10px;
 }
 
 .home-text h2 {
-  font-size: 2rem;
   color: #00f2ff;
   margin: 10px 0;
-}
-
-.home-text p {
-  max-width: 520px;
 }
 
 .glow {
   padding: 14px;
   border-radius: 50%;
-  box-shadow:
-    0 0 40px #00f2ff,
-    0 0 90px rgba(0, 242, 255, 0.7);
+  box-shadow: 0 0 40px #00f2ff, 0 0 90px rgba(0,242,255,0.7);
 }
 
 .glow img {
   width: 360px;
   height: 360px;
-  object-fit: cover;
   border-radius: 50%;
+  object-fit: cover;
   border: 6px solid #06141b;
 }
 
-/* ===== SKILLS ===== */
+/* SKILLS */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -132,16 +125,39 @@ p {
   padding: 25px;
   text-align: center;
   border-radius: 16px;
-  font-size: 1.2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card img {
+  width: 48px;
+  margin-bottom: 10px;
 }
 
 .skill-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 28px rgba(0, 242, 255, 0.4);
+  box-shadow: 0 0 28px rgba(0,242,255,0.4);
 }
 
-/* ===== PROJECTS ===== */
+/* ACADEMICS */
+.academics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.academic-card {
+  background: linear-gradient(180deg, #0b2230, #081a25);
+  padding: 24px;
+  border-radius: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.academic-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(0,242,255,0.4);
+}
+
+/* PROJECTS */
 .ongoing-project {
   background: linear-gradient(180deg, #0b2230, #081a25);
   padding: 28px;
@@ -152,7 +168,6 @@ p {
 
 .ongoing-project span {
   color: #ffcc00;
-  font-weight: 600;
 }
 
 .project-grid {
@@ -165,19 +180,19 @@ p {
   background: linear-gradient(180deg, #0b2230, #081a25);
   padding: 22px;
   border-radius: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 35px rgba(0, 242, 255, 0.45);
+  box-shadow: 0 0 35px rgba(0,242,255,0.45);
 }
 
 .project-card img {
   width: 100%;
   height: 240px;
-  object-fit: cover;
   border-radius: 15px;
+  object-fit: cover;
   margin-bottom: 15px;
 }
 
@@ -185,13 +200,32 @@ p {
   margin-left: 18px;
 }
 
-.project-card li {
-  font-size: 1.05rem;
-  margin-bottom: 6px;
-  color: #d0dce2;
+/* OLYMPIADS */
+.olympiad-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
 }
 
-/* ===== CERTIFICATIONS ===== */
+.olympiad-card {
+  background: linear-gradient(180deg, #0b2230, #081a25);
+  padding: 22px;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.olympiad-card img {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.olympiad-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(0,242,255,0.45);
+}
+
+/* CERTIFICATIONS */
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -203,12 +237,7 @@ p {
   padding: 20px;
   border-radius: 20px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.cert-card:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 30px rgba(0, 242, 255, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .cert-card img {
@@ -221,12 +250,12 @@ p {
   margin-bottom: 12px;
 }
 
-.cert-card p {
-  font-size: 1.05rem;
-  font-weight: 500;
+.cert-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 30px rgba(0,242,255,0.4);
 }
 
-/* ===== ACHIEVEMENTS ===== */
+/* ACHIEVEMENTS */
 .achievement-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -237,39 +266,27 @@ p {
   background: linear-gradient(180deg, #0b2230, #081a25);
   padding: 24px;
   border-radius: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .achievement-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 0 30px rgba(0, 242, 255, 0.45);
+  box-shadow: 0 0 30px rgba(0,242,255,0.45);
 }
 
-.achievement-card h3 {
-  margin-bottom: 10px;
-}
-
-.achievement-card p {
-  font-size: 1.05rem;
-  margin-bottom: 6px;
-}
-
-/* ===== CONTACT ===== */
+/* CONTACT & FOOTER */
 #contact p {
-  font-size: 1.1rem;
   margin-bottom: 10px;
 }
 
-/* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 25px;
   background: #020c13;
-  font-size: 1rem;
   color: #cfd8dc;
 }
 
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 @media (max-width: 900px) {
   header {
     padding: 16px 30px;
@@ -278,10 +295,6 @@ footer {
   .home {
     flex-direction: column-reverse;
     text-align: center;
-  }
-
-  .home-text h1 {
-    font-size: 3rem;
   }
 
   .glow img {

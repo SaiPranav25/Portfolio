@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<!-- ================= NAVBAR ================= -->
 <header>
   <nav>
     <h2 class="logo">Portfolio.</h2>
@@ -15,7 +16,9 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#academics">Academics</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#olympiads">Olympiads</a></li>
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -23,7 +26,7 @@
   </nav>
 </header>
 
-<!-- HOME -->
+<!-- ================= HOME ================= -->
 <section id="home" class="home">
   <div class="home-text">
     <h3>Hello, It's Me</h3>
@@ -34,12 +37,13 @@
       Full Stack Development, Data Structures, and AI-based systems.
     </p>
   </div>
+
   <div class="glow">
     <img src="images/profile.jpg" alt="Sai Pranav">
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
 <section id="about">
   <h2>About <span>Me</span></h2>
   <p>
@@ -54,31 +58,62 @@
   </p>
 </section>
 
-<!-- SKILLS -->
+<!-- ================= SKILLS ================= -->
 <section id="skills">
   <h2>Technical <span>Skills</span></h2>
+
   <div class="skills-grid">
-    <div class="skill-card">Python</div>
-    <div class="skill-card">Java</div>
-    <div class="skill-card">JavaScript</div>
-    <div class="skill-card">React</div>
-    <div class="skill-card">Node.js</div>
-    <div class="skill-card">MongoDB</div>
-    <div class="skill-card">SQL</div>
-    <div class="skill-card">Git / GitHub</div>
+    <div class="skill-card"><img src="icons/python.svg"><p>Python</p></div>
+    <div class="skill-card"><img src="icons/java.svg"><p>Java</p></div>
+    <div class="skill-card"><img src="icons/js.svg"><p>JavaScript</p></div>
+    <div class="skill-card"><img src="icons/react.svg"><p>React</p></div>
+    <div class="skill-card"><img src="icons/node.svg"><p>Node.js</p></div>
+    <div class="skill-card"><img src="icons/mongodb.svg"><p>MongoDB</p></div>
+    <div class="skill-card"><img src="icons/sql.svg"><p>SQL</p></div>
+    <div class="skill-card"><img src="icons/git.svg"><p>Git / GitHub</p></div>
   </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- ================= ACADEMICS ================= -->
+<section id="academics">
+  <h2>Academic <span>Background</span></h2>
+
+  <div class="academics-grid">
+
+    <div class="academic-card">
+      <h3>B.Tech – Computer Science Engineering</h3>
+      <p><b>College:</b> Mahatma Gandhi Institute of Technology</p>
+      <p><b>CGPA:</b> 8.97</p>
+      <p><b>Year:</b> 2022 – 2026 (Expected)</p>
+    </div>
+
+    <div class="academic-card">
+      <h3>Intermediate (MPC)</h3>
+      <p><b>College:</b> Sri Chaitanya Junior College</p>
+      <p><b>Percentage:</b> 97.9%</p>
+      <p><b>Year:</b> 2020 – 2022</p>
+    </div>
+
+    <div class="academic-card">
+      <h3>Schooling (CBSE)</h3>
+      <p><b>School:</b> Vignan, Madinaguda</p>
+      <p><b>Percentage:</b> 89.7%</p>
+      <p><b>Year:</b> 2020 Pass-out</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
 <section id="projects">
   <h2>Projects</h2>
 
-  <!-- ONGOING -->
+  <!-- ONGOING PROJECT -->
   <div class="ongoing-project">
     <h3>Hybrid Brain Tumor Classification <span>(Ongoing)</span></h3>
     <p><b>Technologies:</b> Python, TensorFlow, OpenCV, LightGBM</p>
     <p>
-      Developing a hybrid AI framework that combines GACO-based feature
+      Developing a hybrid AI framework combining GACO-based feature
       optimization with LightGBM classification for accurate brain tumor
       detection from MRI images. The project also integrates physiological
       signal analysis for stress and mental health monitoring through a
@@ -86,7 +121,7 @@
     </p>
   </div>
 
-  <!-- COMPLETED -->
+  <!-- COMPLETED PROJECTS -->
   <div class="project-grid">
 
     <div class="project-card">
@@ -115,7 +150,7 @@
       <ul>
         <li>Multi-role system (User, Controller, Admin)</li>
         <li>OTP-based authentication</li>
-        <li>Real-time dashboard updates</li>
+        <li>Live admin dashboard updates</li>
       </ul>
     </div>
 
@@ -123,8 +158,8 @@
       <img src="images/projects/banking.jpg">
       <h3>Banking Management System</h3>
       <ul>
-        <li>Account creation and fund transfers</li>
-        <li>Loan management (gold & vehicle loans)</li>
+        <li>Account creation & fund transfers</li>
+        <li>Gold and vehicle loan management</li>
         <li>Digital coin-jar savings feature</li>
       </ul>
     </div>
@@ -133,8 +168,8 @@
       <img src="images/projects/eventhub.jpg">
       <h3>EventHub – Community Events Platform</h3>
       <ul>
-        <li>Discover and join local community events</li>
-        <li>Advanced filtering & RSVP system</li>
+        <li>Local event discovery & RSVP system</li>
+        <li>Advanced filtering & real-time search</li>
         <li>Built using React, TypeScript & Tailwind</li>
       </ul>
     </div>
@@ -142,41 +177,62 @@
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
+<!-- ================= OLYMPIADS ================= -->
+<section id="olympiads">
+  <h2>Academic <span>Olympiads</span></h2>
+
+  <div class="olympiad-grid">
+
+    <div class="olympiad-card">
+      <img src="icons/imo.png">
+      <h3>International Mathematics Olympiad (IMO)</h3>
+      <p>Silver – 5th Class</p>
+      <p>Bronze – 6th & 8th Class</p>
+    </div>
+
+    <div class="olympiad-card">
+      <img src="icons/nso.png">
+      <h3>National Science Olympiad (NSO)</h3>
+      <p>Silver – 7th Class</p>
+    </div>
+
+    <div class="olympiad-card">
+      <img src="icons/naso.png">
+      <h3>National Astronomy & Science Olympiad (NASO)</h3>
+      <p>Gold – 8th Class</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
 <section id="certifications">
   <h2>Certifications</h2>
+
   <div class="cert-grid">
     <div class="cert-card"><img src="certificates/nptel.png"><p>NPTEL – DSA using Python</p></div>
     <div class="cert-card"><img src="certificates/java_udemy.png"><p>Java Certification – Udemy</p></div>
     <div class="cert-card"><img src="certificates/coursera_fs.png"><p>Full Stack – Amazon (Coursera)</p></div>
     <div class="cert-card"><img src="certificates/stanford_ml.png"><p>Supervised ML – Stanford</p></div>
     <div class="cert-card"><img src="certificates/navodita.png"><p>Frontend Internship – Navodita</p></div>
+    <div class="cert-card"><img src="certificates/smart_interviews.png"><p>Smart Interviews – Smart Coder (Bronze)</p></div>
   </div>
 </section>
 
-<!-- ACHIEVEMENTS -->
+<!-- ================= ACHIEVEMENTS ================= -->
 <section id="achievements">
   <h2>Achievements</h2>
 
   <div class="achievement-grid">
-
     <div class="achievement-card">
       <h3>🏸 Badminton</h3>
       <p>Won 4 district-level medals</p>
-      <p>Participated in multiple open & stadium tournaments</p>
+      <p>Multiple open & stadium tournaments</p>
     </div>
 
     <div class="achievement-card">
       <h3>♟ Chess</h3>
-      <p>Silver medal – 5th class</p>
-      <p>Winner – 8th class inter-school competition</p>
-    </div>
-
-    <div class="achievement-card">
-      <h3>🧮 Olympiads</h3>
-      <p>IMO: Silver (5th), Bronze (6th & 8th)</p>
-      <p>NSO: Silver (7th)</p>
-      <p>NASO: Gold (8th)</p>
+      <p>District-level Silver Medal</p>
     </div>
 
     <div class="achievement-card">
@@ -184,11 +240,10 @@
       <p>Rank: <b>5486</b></p>
       <p>Merit-based admission to MGIT</p>
     </div>
-
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- ================= CONTACT ================= -->
 <section id="contact">
   <h2>Contact</h2>
   <p>📧 saipranav2502@gmail.com</p>
