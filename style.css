@@ -338,3 +338,12 @@ footer {
   font-weight: 600;
   letter-spacing: 0.3px;
 }
+.progress-banner {
+  background: linear-gradient(90deg, #ffcc70, #ff9f1c);
+  color: #222;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
