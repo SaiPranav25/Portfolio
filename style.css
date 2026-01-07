@@ -330,20 +330,14 @@ footer {
   max-width: 700px;
 }
 .progress-banner {
-  background: linear-gradient(90deg, #ffcc70, #ff9f1c);
-  color: #222;
+  background: #ffb703;           /* solid visible color */
+  color: #000;
   text-align: center;
-  padding: 10px 15px;
+  padding: 12px 16px;
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.3px;
+  position: relative;
+  z-index: 9999;
 }
-.progress-banner {
-  background: linear-gradient(90deg, #ffcc70, #ff9f1c);
-  color: #222;
-  text-align: center;
-  padding: 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-}
+
+
